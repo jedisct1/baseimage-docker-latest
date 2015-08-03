@@ -120,9 +120,9 @@ It follows from this that Baseimage-docker also does not deny the Docker philoso
 
 To look around in the image, run:
 
-    docker run --rm -t -i phusion/baseimage:<VERSION> /sbin/my_init -- bash -l
+    docker run --rm -t -i jedisct1/phusion-baseimage-latest:<VERSION> /sbin/my_init -- bash -l
 
-where `<VERSION>` is [one of the baseimage-docker version numbers](https://github.com/phusion/baseimage-docker/blob/master/Changelog.md).
+where `<VERSION>` is one of the baseimage-docker version numbers.
 
 You don't have to download anything manually. The above command will automatically pull the baseimage-docker image from the Docker registry.
 
@@ -138,7 +138,7 @@ The image is called `phusion/baseimage`, and is available on the Docker registry
     # sure you lock down to a specific version, not to `latest`!
     # See https://github.com/phusion/baseimage-docker/blob/master/Changelog.md for
     # a list of version numbers.
-    FROM phusion/baseimage:<VERSION>
+    FROM jedisct1/phusion-baseimage-latest:<VERSION>
 
     # Use baseimage-docker's init system.
     CMD ["/sbin/my_init"]
