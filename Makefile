@@ -1,5 +1,5 @@
 NAME = jedisct1/phusion-baseimage-latest
-VERSION = 0.9.17
+VERSION = 0.9.18
 
 .PHONY: all build test tag_latest release ssh
 
