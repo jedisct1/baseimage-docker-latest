@@ -1,5 +1,7 @@
 # A minimal Ubuntu base image modified for Docker-friendliness
 
+_Baseimage-docker only consumes 6 MB RAM and is much powerful than Busybox or Alpine. See why below._
+
 Baseimage-docker is a special [Docker](https://www.docker.com) image that is configured for correct use within Docker containers. It is Ubuntu, plus:
 
  * Modifications for Docker-friendliness.
