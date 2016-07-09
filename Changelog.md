@@ -1,3 +1,5 @@
+(changelog for the original phusion version)
+
 ## 0.9.19 (release date: 2016-07-08)
 
  * Upgraded to Ubuntu 16.04. Thanks to Pierre Jacomet for submitting this patch.
