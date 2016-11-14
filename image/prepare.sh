@@ -19,6 +19,7 @@ echo -n no > /etc/container_environment/INITRD
 sed -i 's/^#\s*\(deb.*universe\)$/\1/g' /etc/apt/sources.list
 sed -i 's/^#\s*\(deb.*multiverse\)$/\1/g' /etc/apt/sources.list
 apt-get update
+apt-get dist-upgrade -y
 
 ## Fix some issues with APT packages.
 ## See https://github.com/dotcloud/docker/issues/1024
