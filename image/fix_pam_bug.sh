@@ -10,7 +10,6 @@ export CONFIGURE_OPTS=--disable-audit
 cd /tmp
 
 $minimal_apt_get_install gdebi-core
-apt-get build-dep -y --no-install-recommends pam
 apt-get source -y -b pam
 gdebi -n libpam-doc*.deb libpam-modules*.deb libpam-runtime*.deb libpam0g*.deb
 rm -rf *.deb *.gz *.dsc *.changes pam-*
